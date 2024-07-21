@@ -17,7 +17,8 @@
                         <th>Nombre</th>
                         <th>Correo</th>
                         <th>Celular</th>
-                        <th>Editar / Borrar</th>
+                        <th>Editar</th>
+                        <th>Borrar</th>
                     </thead>
                     <tbody>
                         <% 
@@ -30,6 +31,8 @@
                             <td><%= usuario.celular %></td>
                             <td>
                                 <a href="/editarUsuario/<%= usuario.idusuario %>">Editar</a>
+                            </td>
+                            <td>
                                 <a href="/borrarUsuario/<%= usuario.idusuario %>">Borrar</a>
                             </td>
                         </tr>
