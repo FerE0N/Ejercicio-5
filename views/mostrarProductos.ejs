@@ -17,7 +17,8 @@
                         <th>Nombre</th>
                         <th>Precio</th>
                         <th>Stock</th>
-                        <th>Editar / Borrar</th>
+                        <th>Editar</th>
+                        <th>Borrar</th>
                     </thead>
                     <tbody>
                         <% 
@@ -30,6 +31,8 @@
                             <td><%= producto.stock %></td>
                             <td>
                                 <a href="/editarProducto/<%= producto.idproducto %>">Editar</a>
+                            </td>
+                            <td>
                                 <a href="/borrarProducto/<%= producto.idproducto %>">Borrar</a>
                             </td>
                         </tr>
